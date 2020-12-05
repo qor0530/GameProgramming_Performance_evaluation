@@ -28,7 +28,7 @@ void GameManager::Init(HWND hWnd)
 
 	nowScene = new Scene();
 
-	nowScene->ChangeScene("Stage1");
+	nowScene->ChangeScene("Main");
 }
 
 void GameManager::Update()

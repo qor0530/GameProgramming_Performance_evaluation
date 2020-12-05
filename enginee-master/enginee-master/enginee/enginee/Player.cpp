@@ -95,17 +95,6 @@ void Player::MouseInput()
 
 	degree = D3DXToDegree(radian);
 
-	auto flipedScale = -scale.y;
-	if (mousePosition.x < 0 && isFlip == true)
-	{
-		scale.y = scale.y;
-		isFlip = false;
-	}
-	else if (mousePosition.x > 0)
-	{
-		scale.y = flipedScale;
-		isFlip = true;
-	}
 	D3DXVECTOR2 normal;
 
 	D3DXVec2Normalize(&normal, &diff);
@@ -115,6 +104,7 @@ void Player::MouseInput()
 		auto bullet = Instantiate<Bullet>(position);
 		if (bullet != nullptr)
 		{
+			PlaySound(L"./Resource/Sound/Shot.wav", NULL, SND_FILENAME | SND_ASYNC);
 			bullet->SetOption(normal, 10.0f);
 		}
 	}

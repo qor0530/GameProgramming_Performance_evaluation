@@ -49,11 +49,13 @@ void GraphicManager::Init(LPDIRECT3DDEVICE9 device)
 	//testTexture = CreateTexture(L"TextImage.png");
 	AddTexture("TestImage", L"./Resource/Image/TextImage.png");
 	AddTexture("TestAnimation", L"./Resource/Image/우리편.png");
-	AddTexture("BackGround", L"./Resource/Image/Back.png");
+	AddTexture("BackGround", L"./Resource/Image/PoliceOffice.png");
 	AddTexture("Bullet", L"./Resource/Image/Bullet.png");
-	AddTexture("Enemy", L"./Resource/Image/enemy.png");
-	AddTexture("GameStart", L"./Resource/Image/게임시작.png");
-	AddTexture("GameEnd", L"./Resource/Image/게임끝.png");
+	AddTexture("Enemy1", L"./Resource/Image/enemy1.png");
+	AddTexture("Enemy2", L"./Resource/Image/enemy2.png");
+	AddTexture("Enemy3", L"./Resource/Image/enemy3.png");
+	AddTexture("GameStart", L"./Resource/Image/Start.png");
+	AddTexture("GameEnd", L"./Resource/Image/End.png");
 
 	//여기서 사용할 텍스쳐 불러옴
 }

@@ -15,7 +15,7 @@ void Enemy::Awake()
 {
 	name = "Enemy";
 	sortingLayer = 1;
-	animation->SetAnimation("Enemy");
+	animation->SetAnimation("Enemy1");
 
 	target = static_cast<Player*>(GameObject::Find("Player"));
 }

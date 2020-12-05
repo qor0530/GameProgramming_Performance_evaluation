@@ -141,6 +141,7 @@ void Scene::ChangeScene(std::string sceneName)
 		mciSendString(L"play BGM repeat", 0, 0, 0);
 
 		//if (InputManager::mousePosistion < )
+		ChangeScene("Stage1");
 	}
 
 	if (sceneName == "Stage1")
